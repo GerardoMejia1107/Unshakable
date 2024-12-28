@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  /*  border: 1px solid black; */
+}
+
+li {
+  list-style: none;
+}
+
+p,
+li,
+span,
+label {
+  font-family: "Open Sans", serif;
+}
+
+a,
+button {
+  font-family: "Roboto", serif;
+}
+
+button {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center-v-and-h {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  font-size: 2rem;
+}
+
+input {
+  border-radius: 0.3rem;
+}
