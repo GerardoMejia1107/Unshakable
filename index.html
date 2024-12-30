@@ -21,101 +21,133 @@
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/heading.css" />
+    <link rel="stylesheet" href="css/hero.css" />
   </head>
   <body>
-    <header>
-      <section class="title-logo-container">
-        <img src="assets/icons/orange-logo.png" alt="company logo" width="70" />
-        <h1>Unshakable</h1>
+    <div class="app">
+      <header>
+        <section class="title-logo-container">
+          <img
+            src="assets/icons/orange-logo.png"
+            alt="company logo"
+            width="70"
+          />
+          <h1>Unshakable</h1>
+        </section>
+
+        <i class="ri-menu-line burger"></i>
+        <input type="checkbox" id="menu-bar" />
+
+        <nav class="navbar">
+          <ul>
+            <li class="menu-item">
+              <a href=""><i class="ri-bard-line"></i> Generator</a>
+            </li>
+
+            <li class="menu-item">
+              <a href=""><i class="ri-verified-badge-line"></i> Verifier</a>
+            </li>
+
+            <li class="menu-item">
+              <a href="">Products <i class="ri-arrow-down-wide-line"></i></a>
+              <ul class="dropdown">
+                <li class="sub-menu-item">
+                  <a href="">
+                    <div class="plan-description">
+                      <h4>Pro</h4>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit, quasi!
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="sub-menu-item">
+                  <a href="">
+                    <div class="plan-description">
+                      <h4>Business</h4>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odit, quasi!
+                      </p>
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="">Resources <i class="ri-arrow-down-wide-line"></i></a>
+              <ul class="dropdown">
+                <li class="sub-menu-item">
+                  <a href=""
+                    ><div class="resource-content">
+                      <i class="ri-hammer-line"></i>Security Architecture
+                    </div></a
+                  >
+                </li>
+                <li class="sub-menu-item">
+                  <a href=""
+                    ><div class="resource-content">
+                      <i class="ri-lock-password-line"></i>Trust Center
+                    </div></a
+                  >
+                </li>
+                <li class="sub-menu-item">
+                  <a href=""
+                    ><div class="resource-content">
+                      <i class="ri-thumb-up-line"></i>Compliance Center
+                    </div></a
+                  >
+                </li>
+                <li class="sub-menu-item">
+                  <a href=""
+                    ><div class="resource-content">
+                      <i class="ri-news-line"></i>Blog
+                    </div></a
+                  >
+                </li>
+
+                <li class="sub-menu-item">
+                  <a href=""
+                    ><div class="resource-content">
+                      <i class="ri-school-line"></i>Unshakable Education
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item"><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="app-content">
+        <div class="hero">
+          <h2>
+            Need a strong password? Try examples like "P@ssw0rd123" or
+            "S3cur3!Key".
+          </h2>
+          <p>
+            Automatically generate, save, and synchronize your passwords across
+            all your devices whenever you need to with Unshakable.
+          </p>
+          <section class="hero-img-container">
+            <img
+              src="assets/images/img-banner-v2.svg"
+              alt=""
+              width="300"
+              loading="lazy"
+            />
+          </section>
+          <section class="btn-group">
+            <a href="">Try Pro</a>
+            <a href="">Try Business</a>
+          </section>
+        </div>
       </section>
-
-      <i class="ri-menu-line burger"></i>
-      <input type="checkbox" id="menu-bar" />
-
-      <nav class="navbar">
-        <ul>
-          <li class="menu-item">
-            <a href=""><i class="ri-bard-line"></i> Generator</a>
-          </li>
-
-          <li class="menu-item">
-            <a href=""><i class="ri-verified-badge-line"></i> Verifier</a>
-          </li>
-
-          <li class="menu-item">
-            <a href="">Products <i class="ri-arrow-down-wide-line"></i></a>
-            <ul class="dropdown">
-              <li class="sub-menu-item">
-                <a href="">
-                  <div class="plan-description">
-                    <h4>Pro</h4>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Odit, quasi!
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li class="sub-menu-item">
-                <a href="">
-                  <div class="plan-description">
-                    <h4>Business</h4>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Odit, quasi!
-                    </p>
-                  </div></a
-                >
-              </li>
-            </ul>
-          </li>
-
-          <li class="menu-item">
-            <a href="">Resources <i class="ri-arrow-down-wide-line"></i></a>
-            <ul class="dropdown">
-              <li class="sub-menu-item">
-                <a href=""
-                  ><div class="resource-content">
-                    <i class="ri-hammer-line"></i>Security Architecture
-                  </div></a
-                >
-              </li>
-              <li class="sub-menu-item">
-                <a href=""
-                  ><div class="resource-content">
-                    <i class="ri-lock-password-line"></i>Trust Center
-                  </div></a
-                >
-              </li>
-              <li class="sub-menu-item">
-                <a href=""
-                  ><div class="resource-content">
-                    <i class="ri-thumb-up-line"></i>Compliance Center
-                  </div></a
-                >
-              </li>
-              <li class="sub-menu-item">
-                <a href=""
-                  ><div class="resource-content">
-                    <i class="ri-news-line"></i>Blog
-                  </div></a
-                >
-              </li>
-
-              <li class="sub-menu-item">
-                <a href=""
-                  ><div class="resource-content">
-                    <i class="ri-school-line"></i>Unshakable Education
-                  </div></a
-                >
-              </li>
-            </ul>
-          </li>
-
-          <li class="menu-item"><a href="">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    </div>
     <script src="js/main.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"

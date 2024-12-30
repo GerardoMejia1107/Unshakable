@@ -18,11 +18,6 @@ label {
   font-family: "Open Sans", serif;
 }
 
-a,
-button {
-  font-family: "Roboto", serif;
-}
-
 button {
   font-weight: 400;
 }
@@ -32,7 +27,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a {
   font-family: "Nunito", serif;
 }
 
