@@ -85,7 +85,7 @@ header .navarbar ul li:focus-within > ul {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   header {
     padding: 20px;
   }
@@ -133,4 +133,153 @@ header .navarbar ul li:focus-within > ul {
     left: 0;
     right: 0;
   }
+
+  .navbar li .plan-description {
+    padding: 0 10px;
+  }
+
+  .navbar li .plan-description h4 {
+    font-size: 1.1rem;
+  }
+
+  .navbar li .plan-description p {
+    font-size: 1rem;
+    padding-right: 30px;
+  }
+
+  .resource-content,
+  .resource-content i {
+    font-size: 1.1rem;
+  }
+
+  .resource-content i {
+    margin-right: 0.5rem;
+  }
+}
+
+/* Small screens (phones) */
+@media (min-width: 320px) and (max-width: 480px) {
+  /*Title and logo styles-------------------*/
+  .title-logo-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .title-logo-container img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /*Menu styles*/
+  header .navbar ul li a,
+  header .navbar ul li a i {
+    font-size: 1rem;
+  }
+
+  .navbar li .plan-description h4,
+  .resource-content {
+    font-size: calc(0.8rem + 2px);
+  }
+
+  .navbar li .plan-description p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /*Title and logo styles-------------------*/
+  .title-logo-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .title-logo-container img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /*Menu styles*/
+  header .navbar ul li a,
+  header .navbar ul li a i {
+    font-size: 1rem;
+  }
+
+  .navbar li .plan-description h4,
+  .resource-content {
+    font-size: calc(0.8rem + 2px);
+  }
+
+  .navbar li .plan-description p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /*Title and logo styles-------------------*/
+  .title-logo-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .title-logo-container img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /*Menu styles*/
+  header .navbar ul li a,
+  header .navbar ul li a i {
+    font-size: 1rem;
+  }
+
+  .navbar li .plan-description h4,
+  .resource-content {
+    font-size: calc(0.8rem + 2px);
+  }
+
+  .navbar li .plan-description p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Extra large screens (large desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /*Title and logo styles-------------------*/
+  .title-logo-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .title-logo-container img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /*Menu styles*/
+  header .navbar ul li a,
+  header .navbar ul li a i {
+    font-size: 0.9rem;
+  }
+
+  .navbar li .plan-description h4,
+  .resource-content {
+    font-size: calc(0.8rem + 2px);
+  }
+
+  .navbar li .plan-description p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Extra large screens (large desktops) */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  /* Estilos para pantallas extra grandes */
+}
+
+/* Ultra large screens (4K monitors or larger) */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  /* Estilos para pantallas ultra grandes */
+}
+
+/* Super large screens (8K or ultra-wide monitors) */
+@media (min-width: 1920px) {
+  /* Estilos para pantallas super grandes */
 }
