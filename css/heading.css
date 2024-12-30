@@ -1,0 +1,136 @@
+body {
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--pure-white);
+  color: white;
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  border-bottom: 2px solid var(--primary-dark-blue);
+}
+
+/*Title and Logo styles*/
+.title-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.title-logo-container h1 {
+  color: var(--primary-dark-blue);
+}
+
+.title-logo-container img {
+  width: 50px;
+  height: 50px;
+}
+
+/*Menu styles*/
+header .navbar > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header .navbar ul li {
+  position: relative;
+}
+
+header .navbar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  display: block;
+  color: var(--primary-dark-blue);
+  font-weight: 400;
+}
+header .navbar ul li a:hover {
+  background-color: var(--secondary-light-blue);
+  border-radius: 5px;
+}
+
+i {
+  font-size: max(1.5rem);
+  color: var(--primary-dark-blue);
+}
+
+header .navbar ul li ul {
+  position: absolute;
+  border-radius: 5px;
+  background-color: var(--off-white);
+  left: 0;
+  width: 200px;
+  display: none;
+}
+header .navbar ul li ul li {
+  width: 100%;
+}
+
+header .navbar ul li ul li ul {
+  left: 100%;
+  top: 0;
+}
+header .navbar ul li:hover > ul,
+header .navarbar ul li:focus-within > ul {
+  display: initial;
+}
+
+#menu-bar,
+.burger {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 20px;
+  }
+
+  header .navbar {
+    display: none;
+  }
+
+  header .burger {
+    display: initial;
+    cursor: pointer;
+    font-size: max(1.8rem);
+    color: var(--primary-dark-blue);
+  }
+
+  header .navbar > ul {
+    flex-direction: column;
+  }
+
+  header .navbar ul li a:hover {
+    border-radius: 0;
+  }
+
+  header .navbar ul li {
+    width: 100%;
+    border-bottom: 1px solid var(--light-grey);
+  }
+
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+    top: 100%;
+  }
+
+  header .navbar ul li ul li ul {
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  header nav.visibility {
+    display: initial;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+}
