@@ -54,19 +54,78 @@
   width: 100%;
   display: flex;
   padding: 20px 0;
-  justify-content: space-evenly;
 }
+
+.hero-description .btn-group {
+  display: none;
+}
+
+/*Media queries rules ----------*/
 @media (min-width: 320px) and (max-width: 480px) {
   .hero p,
   .hero .btn-group a {
     font-size: 0.9rem;
   }
+
+  .hero .btn-group {
+    justify-content: space-evenly;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+  .hero p,
+  .hero .btn-group a {
+    font-size: 0.9rem;
+  }
+
+  .hero .btn-group {
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero .btn-group a {
+    padding: 10px 20px;
+  }
+
+  .hero .hero-img-container img {
+    max-width: 400px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .hero p,
+  .hero .btn-group a {
+    font-size: 0.9rem;
+  }
+
+  .hero .btn-group {
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero .btn-group a {
+    padding: 10px 20px;
+  }
+
+  .hero .hero-img-container img {
+    max-width: 500px;
+  }
+
+  .hero :is(.hero-title, .hero-description) {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .hero-content .hero-description .btn-group,
+  .hero-content {
+    display: flex;
+  }
+
+  .hero .btn-group {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
