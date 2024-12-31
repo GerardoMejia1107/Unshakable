@@ -1,10 +1,3 @@
-.app-content {
-  grid-column: 1/-1;
-  width: 100%;
-  margin-top: 120px;
-  padding: 0 7%;
-}
-
 .hero {
   margin-top: 2rem;
   width: 100%;
@@ -104,18 +97,15 @@
     justify-content: center;
     gap: 1rem;
   }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    margin-top: 2rem;
+  }
 
   .hero .btn-group a {
     padding: 10px 20px;
-  }
-
-  .hero .hero-img-container img {
-    max-width: 500px;
-  }
-
-  .hero :is(.hero-title, .hero-description) {
-    width: 100%;
-    padding: 0 30px;
   }
 
   .hero-content .hero-description .btn-group,
@@ -126,12 +116,52 @@
   .hero .btn-group {
     display: none;
   }
+
+  .hero .hero-img-container img {
+    max-width: 400px;
+  }
+
+  .hero :is(.hero-title, .hero-description) {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .hero .btn-group {
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .hero p,
+  .hero .btn-group a {
+    font-size: 0.9rem;
+  }
+
+  .hero .btn-group {
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero {
+    width: 75vw;
+    margin: 2rem auto;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
+  .hero {
+    width: 75vw;
+    margin: 2rem auto;
+  }
 }
 
 @media (min-width: 1440px) and (max-width: 1919px) {

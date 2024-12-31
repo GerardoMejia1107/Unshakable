@@ -1,0 +1,131 @@
+.generator {
+  width: 100%;
+  padding: 20px;
+}
+
+.generator h2 {
+  text-align: center;
+  color: var(--primary-dark-blue);
+}
+
+.steps-use .list-of-steps li {
+  list-style: normal;
+  list-style-position: inside;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.generator .generation-section {
+  margin-top: 1rem;
+}
+
+.generator .generation-section .outcome input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 1rem auto;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.generator .generation-section .btn-group a {
+  display: block;
+  width: max-content;
+  background-color: var(--primary-dark-blue);
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.generator .generation-section .btn-group {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.generator .generation-section .parameters {
+  margin-top: 2rem;
+}
+
+.generator .generation-section .parameters ul {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+/*Checkbox personalization*/
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: var(--pure-white);
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: var(--highlight-orange);
+  border-color: transparent;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "✓";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: var(--pure-white);
+}
+
+.generator .generation-section .parameters .length {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.generator .generation-section .parameters .length input[type="range"] {
+  width: 70%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+}

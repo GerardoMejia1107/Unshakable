@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/heading.css" />
     <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/generator.css" />
   </head>
   <body>
     <div class="app">
@@ -123,8 +124,8 @@
         </nav>
       </header>
 
-      <section class="app-content">
-        <div class="hero">
+      <div class="app-content">
+        <section class="hero">
           <div class="hero-title">
             <h2>
               Need a strong password? Try examples like "P@ssw0rd123" or
@@ -156,13 +157,63 @@
             <a href="">Try Pro</a>
             <a href="">Try Business</a>
           </section>
-        </div>
-      </section>
+        </section>
+
+        <section class="generator">
+          <h2>Custom Password Generator</h2>
+          <article class="steps-use">
+            <ol class="list-of-steps">
+              <li>
+                Select the parameters you want to be included in your password.
+              </li>
+              <li>Click the "Generate" button.</li>
+              <li>Copy to your clipboard the password generated.</li>
+            </ol>
+          </article>
+
+          <section class="generation-section">
+            <div class="outcome">
+              <input
+                type="text"
+                name=""
+                id=""
+                value="this is your password"
+                disabled
+              />
+            </div>
+            <section class="btn-group">
+              <a href="">Generate</a>
+              <a href="">Copy</a>
+            </section>
+
+            <section class="parameters">
+              <div class="length">
+                <h4>Lenght: <span>0</span></h4>
+                <input type="range" name="" id="" />
+              </div>
+              <ul class="list-parameters">
+                <li>
+                  <input type="checkbox" name="uppercase" id="uppercase" />
+                  <label for="uppercase">Include Uppercase Letters</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="lowercase" id="lowercase" />
+                  <label for="lowercase">Include Lowercase Letters</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="numbers" id="numbers" />
+                  <label for="numbers">Include Numbers</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="symbols" id="symbols" />
+                  <label for="symbols">Include Symbols</label>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </section>
+      </div>
     </div>
     <script src="js/main.js"></script>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
   </body>
 </html>
