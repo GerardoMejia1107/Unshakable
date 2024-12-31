@@ -3,6 +3,7 @@ body {
 }
 
 header {
+  grid-column: 1/-1;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,6 +16,7 @@ header {
   justify-content: space-between;
   z-index: 1000;
   border-bottom: 2px solid var(--primary-dark-blue);
+  height: 90px;
 }
 
 /*Title and Logo styles*/
@@ -33,6 +35,10 @@ header {
 }
 
 /*Menu styles*/
+header .navbar {
+  background-color: var(--pure-white);
+}
+
 header .navbar > ul {
   display: flex;
   justify-content: space-evenly;

@@ -1,0 +1,171 @@
+.hero {
+  margin-top: 2rem;
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.25);
+  background-color: var(--off-white);
+  height: auto;
+}
+
+.hero {
+  color: var(--primary-dark-blue);
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+}
+
+.hero p {
+  color: var(--pure-black);
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.hero .hero-img-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.hero .hero-img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.hero .btn-group a {
+  display: block;
+  width: max-content;
+  background-color: var(--primary-dark-blue);
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.hero .btn-group {
+  width: 100%;
+  display: flex;
+  padding: 20px 0;
+}
+
+.hero-description .btn-group {
+  display: none;
+}
+
+/*Media queries rules ----------*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .hero p,
+  .hero .btn-group a {
+    font-size: 0.9rem;
+  }
+
+  .hero .btn-group {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .hero p,
+  .hero .btn-group a {
+    font-size: 0.9rem;
+  }
+
+  .hero .btn-group {
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero .btn-group a {
+    padding: 10px 20px;
+  }
+
+  .hero .hero-img-container img {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero p,
+  .hero .btn-group a {
+    font-size: 0.9rem;
+  }
+
+  .hero .btn-group {
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    margin-top: 2rem;
+  }
+
+  .hero .btn-group a {
+    padding: 10px 20px;
+  }
+
+  .hero-content .hero-description .btn-group,
+  .hero-content {
+    display: flex;
+  }
+
+  .hero .btn-group {
+    display: none;
+  }
+
+  .hero .hero-img-container img {
+    max-width: 400px;
+  }
+
+  .hero :is(.hero-title, .hero-description) {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .hero .btn-group {
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero p,
+  .hero .btn-group a {
+    font-size: 0.9rem;
+  }
+
+  .hero .btn-group {
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero {
+    width: 75vw;
+    margin: 2rem auto;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .hero {
+    width: 75vw;
+    margin: 2rem auto;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+}
+
+@media (min-width: 1920px) and (max-width: 3839px) {
+}
