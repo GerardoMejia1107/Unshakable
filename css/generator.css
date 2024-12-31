@@ -110,6 +110,16 @@ input[type="checkbox"]:checked + label::after {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .list-of-steps li,
+  .generation-section .btn-group a,
+  .list-parameters li {
+    font-size: 0.9rem;
+  }
+
+  .outcome input[type="text"],
+  .parameters .length h4 {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
