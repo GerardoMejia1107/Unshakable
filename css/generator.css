@@ -109,6 +109,10 @@ input[type="checkbox"]:checked + label::after {
   width: 70%;
 }
 
+.parameters .length h4 {
+  color: var(--primary-dark-blue);
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .list-of-steps li,
   .generation-section .btn-group a,
@@ -123,6 +127,11 @@ input[type="checkbox"]:checked + label::after {
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+  .list-of-steps,
+  .generation-section {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
