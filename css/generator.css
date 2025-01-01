@@ -132,6 +132,17 @@ input[type="checkbox"]:checked + label::after {
     width: 80%;
     margin: 0 auto;
   }
+
+  .list-of-steps li,
+  .generation-section .btn-group a,
+  .list-parameters li {
+    font-size: 0.9rem;
+  }
+
+  .outcome input[type="text"],
+  .parameters .length h4 {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
